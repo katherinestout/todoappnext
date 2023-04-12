@@ -5,10 +5,27 @@ const getTodos = async () => {
     return todos.json();
 }
 
+// const getTheTodos = async function getServerSideProps(context) {
+//     let res = await fetch("http://localhost:3000/api/hello/route", {
+//         method: "GET",
+//         headers: {
+//           "Content-Type": "application/json",
+//         },
+//       });
+//       let allPosts = await res.json();
+    
+//       return {
+//         props: { allPosts },
+//       };
+//     }
+    
+
 
 export default async function TodoList() {
     const {todos} = await getTodos();
     //console.log(todos);
+    // const {moreTodos} = await getTheTodos();
+    // console.log(moreTodos);
     return (
         <div>
 <ul>

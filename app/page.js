@@ -1,7 +1,16 @@
-// import Image from 'next/image'
-// import { Inter } from 'next/font/google'
+import AddNewTodo from "./add-new-todo";
+import TodoList from "./todo-list";
 
-// const inter = Inter({ subsets: ['latin'] })
+
+// const express = require("express");
+// const bodyParser = require("body-parser");
+// const mongoose = require("mongoose");
+
+// const app = express();
+
+// app.set("view engine", "ejs");
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(express.static("public"));
 
 
 
@@ -29,8 +38,9 @@
 // }
 // run().catch(console.dir);
 
-import AddNewTodo from "./add-new-todo";
-import TodoList from "./todo-list";
+
+
+
 
 export default function Home() {
   return (
